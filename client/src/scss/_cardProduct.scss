@@ -1,0 +1,133 @@
+.product-card-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-container {
+    margin: 2%;
+    height: auto;
+    width: 20%;
+}
+
+.product {
+    height: 100%;
+}
+
+.title-product {
+    width: 100%;
+    text-align: center;
+    color: var(--dark-blue);
+    font-size: 25px;
+    margin-bottom: 20px;
+    max-height: 30px;
+    overflow: hidden;
+}
+
+.card-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    background-color: var(--card-color2);
+    box-shadow: var(--fixed-shadow);
+    transition: var(--transition);
+
+    &:hover {
+        box-shadow: var(--elevate-shadow);
+    }
+}
+
+.card-product-config {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    background-color: var(--card-color2);
+    box-shadow: var(--fixed-shadow);
+    transition: var(--transition);
+
+    &:hover {
+        box-shadow: var(--elevate-shadow);
+    }
+}
+
+.desc-product {
+    color: var(--dark-blue);
+    text-decoration: none;
+
+    p {
+        text-align: center;
+    }
+}
+
+.infos-product {
+    color: var(--light-blue);
+    display: flex;
+    justify-content: center;
+
+    p {
+        padding: 6px;
+        margin: 0 10px;
+        font-size: 14px;
+    }
+}
+
+.product-price,
+.checkout {
+    color: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+
+    p {
+        margin: 4%;
+        font-size: 25px;
+    }
+}
+
+.checkout {
+    svg {
+        width: 30px;
+        height: auto;
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.button {
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    background-color: var(--background);
+    color: var(--blue);
+    border: 0.1rem solid var(--blue);
+    font-weight: bolder;
+    transition: var(--transition);
+
+    &:hover {
+        background-color: var(--dark-blue);
+        color: var(--background);
+        border-color: var(--background);
+    }
+}
+
+@media only screen and (min-device-width: 768px) {
+    .container {
+        .product {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}

@@ -1,0 +1,162 @@
+.config-pc {
+    color: var(--dark-blue);
+
+    ::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #caf0f800;
+    }
+}
+
+.config-pc-title {
+    margin: 0 5% 5% 5%;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.7rem;
+    background-color: var(--card-color2);
+}
+
+.config-pc-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-config {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card-product {
+        width: 75%;
+        height: 65%;
+    }
+}
+
+.hardware-select {
+    width: 20%;
+}
+
+.hardware-select-title {
+    color: var(--light-blue);
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+.hardware-select-element {
+    border-right: 1px solid var(--light-blue);
+}
+
+.hardware-choice {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--light-blue);
+    padding: 5% 5%;
+    align-items: center;
+
+    p {
+        font-weight: bold;
+    }
+
+    img {
+        width: 10%;
+        height: auto;
+    }
+}
+
+.select-section {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    max-height: 670px;
+    overflow-y: scroll;
+
+    .product-config {
+        width: 100%;
+        display: flex;
+        margin-bottom: 5%;
+    }
+
+    .select-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+        .select-content {
+            width: 50%;
+
+            .info-product {
+                text-align: center;
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+.recap-section {
+    width: 40%;
+    max-height: 670px;
+    overflow-y: scroll;
+
+    .card-product {
+        width: 80%;
+        display: flex;
+        margin: 1%;
+        flex-direction: row;
+
+        .link {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+
+            img {
+                width: 25%;
+                height: auto;
+            }
+
+            .desc-product {
+                justify-content: center;
+
+                .title-product {
+                    margin: 0;
+                    font-size: 20px;
+                    overflow: hidden;
+                }
+
+                p {
+                    display: none;
+                }
+            }
+
+            .react-stars,
+            p {
+                display: none;
+            }
+        }
+    }
+
+    .checkout {
+        flex-direction: column;
+        margin-right: 5%;
+        width: 20%;
+
+        svg {
+            align-items: center;
+            width: 30px;
+        }
+    }
+}
+
+.total-config {
+    margin: 20% 5% 0 5%;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.7rem;
+    background-color: var(--card-color2);
+}

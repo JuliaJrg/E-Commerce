@@ -1,0 +1,120 @@
+.container-user-page {
+    background-color: var(--card-color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: var(--dark-blue);
+
+    .row-item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem 0;
+        width: 50vw;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            background-color: var(--background);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            // box-shadow: var(--elevate-shadow);
+
+            .form-row {
+                margin-top: 1em;
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+
+                label {
+                    display: flex;
+                    width: 100%;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                label:first-child{
+                    margin-right: .5em;
+                }
+
+                input {
+                    border-radius: 10px;
+                    border: 1px solid var(--dark-blue);
+                    padding: 1em;
+                    font-size: small;
+                    background-color: rgba(204, 204, 204, 0.25);
+                }
+            }
+            .btnSend {
+                margin-top: 1em;
+                background-color: var(--light-blue);
+                color: var(--background);
+                border: none;
+                padding: 1em;
+                border-radius: 10px;
+                font-size: small;
+                cursor: pointer;
+                transition: all .3s ease-in-out;
+                &:hover {
+                    background-color: var(--ocean-blue);
+                }
+            }
+
+            h2 {
+                font-size: 1.5em;
+                font-weight: bold;
+                color: var(--dark-blue);
+            }
+
+            h3 {
+                display: flex;
+                font-size: 1.5em;
+                font-weight: bold;
+                justify-content: space-between;
+                padding: .5em;
+                align-items: center;
+                margin-top: 1em;
+            }
+        }
+
+        .col {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .row-center {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+
+        .col {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.btn-logout {
+    margin-top: 1em;
+    background-color: var(--light-blue);
+    color: var(--background);
+    border: none;
+    padding: 1em;
+    border-radius: 10px;
+    font-size: small;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    &:hover {
+        background-color: var(--dark-blue);
+    }
+}

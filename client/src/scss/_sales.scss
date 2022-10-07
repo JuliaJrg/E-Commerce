@@ -1,0 +1,13 @@
+.sales-container {
+    color: var(--dark-blue);
+    .title-container {
+        margin: 0 5%;
+        padding: 1rem;
+        text-align: center;
+        border-radius: 0.7rem;
+        background-color: var(--card-color2);
+        h1 {
+            text-align: center;
+        }
+    }
+}

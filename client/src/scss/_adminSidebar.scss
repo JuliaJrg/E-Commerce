@@ -1,0 +1,55 @@
+.sidebar {
+    background-color: var(--background);
+    border-right: 0.5px solid var(--light-blue);
+    min-height: 100vh;
+    flex: 1;
+
+    .top {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: var(--dark-blue);
+        }
+    }
+
+    hr {
+        height: 0;
+        border: 0.5px solid var(--light-blue);
+    }
+
+    .center {
+
+        ul {
+            li {
+                display: flex;
+                align-items: center;
+                padding: 5px;
+                cursor: pointer;
+                color: var(--dark-blue);
+
+                &:hover {
+                    background-color: var(--blue-background);
+                    color: var(--dark-blue);
+                }
+
+                .icon {
+                    font-size: 18px;
+                    color: var(--dark-blue);
+                }
+
+                .span {
+                    font-size: 13px;
+                    font-weight: 600;
+                    color: var(--dark-blue);
+                    margin-left: 10px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

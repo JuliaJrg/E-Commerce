@@ -1,0 +1,71 @@
+.adress {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-color2);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    // box-shadow: var(--elevate-shadow);
+    margin: 2rem 0;
+    width: 50vw;
+    height: max-content;
+    color: var(--dark-blue);
+
+    h3 {
+        display: flex;
+        font-size: 1.5em;
+        font-weight: bold;
+        justify-content: center;
+        padding: .5em;
+        align-items: center;
+        margin-top: 1em;
+    }
+
+
+    input:not(input[type="radio"]) {
+        border: 1px solid var(--dark-blue);
+        background-color: var(--card-color);
+        padding: 1rem;
+        border-radius: 0.5rem;
+        width: 100%;
+        box-shadow: var(--fixed-shadow);
+        margin: 1em 0;
+        font-size: medium;
+        color: var(--dark-blue);
+    }
+
+    button {
+         padding: 1rem;
+         width: 100%;
+         margin: 1em 0;
+         justify-content: center;
+         font-size: medium;
+    }
+
+    .panel-adress {
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: space-between;
+            width: 100%;
+
+            label {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: space-around;
+                padding: 1rem;
+                box-shadow: var(--fixed-shadow);
+                margin: 1em 0;
+                border-radius: 0.5rem;
+                transition: all .3s ease-in-out;
+
+                &:hover {
+                    background-color: var(--card-color);
+                    cursor: pointer;
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.filter-container {
+    width: 100%;
+    padding: 1rem;
+    margin: 0 4%;
+    color: var(--light-blue);
+    border-radius: 0.7rem;
+    background-color: var(--card-color2);
+    box-shadow: var(--fixed-shadow);
+    transition: var(--transition);
+
+    h2 {
+        text-align: center;
+    }
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    padding: 10px;  
+}
+
+.filter-section {
+    margin: 0 5%;
+
+    h5 {
+        margin-bottom: 5px;
+    }
+}
+
+select {
+    font-family: "Nunito", "sans-serif";
+    color: var(--light-blue);
+    background-color: var(--blue-background);
+    border-radius: 4px;
+}
